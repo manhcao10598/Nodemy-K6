@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 60%;
+    height: auto;
+    margin: 30px auto;
+    
+    
+}
+
+input.name{
+    margin-left:53px ;
+}
+input.password{
+    margin-left: 17px;
+}
+
+input.ava{
+    margin-left: 30px;
+}
+
+input.gender{
+    margin-left: 10px;
+}
+input.lang{
+    margin-left: 10px;
+}
+
+div.password{
+    margin: 5px;
+}
+
+div.city{
+    margin: 5px;
+}
+
+div.gender{
+    margin: 5px;
+}
+
+div.ava{
+    margin: 5px;
+}
+
+div.lang{
+    margin: 5px;
+}
+
+
+
+
