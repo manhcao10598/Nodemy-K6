@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* div {
+            border: 1px solid black;
+        }
+         */
+        
+        .login {
+            height: 600px;
+            width: 50%;
+            border-radius: 10px;
+            background-color: black;
+        }
+        
+        .login .header {
+            height: 20%;
+            width: 100%;
+            border-bottom: 2px solid dimgrey;
+        }
+        
+        .login .rooter {
+            height: 60%;
+            width: 100%;
+        }
+        
+        .login .rooter .content {
+            height: 90%;
+            width: 80%;
+        }
+        
+        .login .footer .contentFooter {
+            height: 100%;
+            width: 80%;
+        }
+        
+        .login .rooter .content .textEmail,
+        .textPassword {
+            height: 20%;
+        }
+        
+        .login .rooter .content #inputEmail,
+        #inputPassword {
+            height: 15%;
+            border-radius: 10px;
+        }
+        
+        .login .rooter .content .checkbox {
+            height: 20%;
+            color: snow;
+        }
+        
+        .login .footer {
+            height: 20%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="employerLogin">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="login">
+                <div class="header d-flex justify-content-center">
+                    <div class="title">
+                        <h1 class="text-light text-center">Employer LOgin</h1>
+                    </div>
+                </div>
+                <div class="rooter d-flex justify-content-center align-items-center">
+                    <div class="content">
+                        <div class="textEmail d-flex align-items-end">
+                            <h3 class="text-secondary">Email</h3>
+                        </div>
+                        <input type="text" id="inputEmail" class="w-100">
+                        <div class="textPassword d-flex align-items-end">
+                            <h3 class="text-secondary">Password</h3>
+                        </div>
+                        <input type="password" id="inputPassword" class="w-100">
+                        <div class="checkbox d-flex align-items-center">
+                            <input type="checkbox" id="inputCheckbox"> Remember me for 14 days
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer d-flex justify-content-center align-items-center">
+                    <div class="contentFooter d-flex">
+                        <div class="aForgot w-50 d-flex align-items-center">
+                            <a href="#" style="text-decoration: none;">Forgot password?</a>
+                        </div>
+                        <div class="btnLogin w-50 d-flex justify-content-end align-items-center">
+                            <button style="width: 100px; height: 50px; border-radius: 10px; background-color: turquoise;">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
