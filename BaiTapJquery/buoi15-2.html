@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</head>
+</head>
+<style>
+    .pagination{
+        padding: 5px;
+    }
+    .result{
+        background-color: burlywood;
+        height: 100px;
+        width: 100%;
+    }
+    button{
+        margin-left: 5px;
+    }
+    .active{
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="result">
+        <p id="text1"></p>
+    </div>
+    <div class="pagination d-flex justify-content-center align-items-center">
+        <button class="btn1"><a href="">Previous</a></button>
+        <div class="general"></div>
+        <button class="btn5"><a href="">Next</a></button>
+    </div>
+</body>
+<script>
+    for(var i=0 ;i < 3 ;i++){
+        var idMain=i+1;
+        var template=`
+            <button class="btn btn-${idMain}" value="${idMain}">${idMain}</button>
+        `;
+        $(".general").append(template);
+        $(".btn").click(function(){
+            $(".btn").removeClass("active");
+            $(this).toggleClass("active");
+            var number = $(this).val();
+            $("#text1").html(""+number);
+            
+        })
+
+        $(".btn5").click(function(){
+            var number = $(".btn").val();
+            number++;
+            $("#text1").html(""+number);
+
+        })
+
+       
+    }
+
+    
+
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <script src="../../vendor/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../vendor/fontawesome-free-5.13.0-web/font/css/all.min.css">
+    <link rel="stylesheet" href="../../vendor/fontawesome-free-5.13.0-web/font/js/all.min.js">
+</head>
+<style>
+    .menu-bar{
+        width: 150px;
+        position: relative;
+    }
+    
+
+    .menu{
+        background-color: burlywood;
+       height: 150px;
+       width: 100px;
+       
+       position: absolute;
+       text-align: center;
+       transition:width 10s;
+       
+    }
+    .menu ul{
+        list-style: none;
+        padding: 0;
+    }
+    .icon-menu{
+        position: absolute;
+    }
+
+</style>
+<body>
+    <div class="menu-bar">
+        <div class="icon-menu">
+            <button class="btn">
+                <i class="fas fa-bars w-100"></i>
+            </button>
+            
+        </div>
+        <div class="menu">
+            <ul>
+                <li>an ninh</li>
+                <li>the thao</li>
+                <li>kinh te</li>
+                <li>doi song</li>
+            </ul>
+        </div>   
+    </div>
+</body>
+<script>
+    $(".menu").css("display","none");
+    $(".btn").click(function(){
+        $(".btn").css("display","none");
+        $(".menu").css("display","block");
+        
+
+    })
+</script>
+</html>
