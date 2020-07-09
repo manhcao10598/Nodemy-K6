@@ -7,20 +7,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <button class="btn1" >
-        <a href="">Den Trang Home</a>
-
-    </button>
-    <input type="text">
+    <a href="" class="a1">To home</a>
+    <input type="text" class="text1">
     <br>
-    <button class="btn2" >
-        <a href="">Den trang user</a>
-    </button>
-    <input type="text">
+    <a href="" class="a2">To User</a>
+    <input type="text" class="text2">
 </body>
 <script>
-    $(".btn1").click(function(){
-        
+    $(".a1").click(function(){
+        var value = $(".text1").val();
+        $(".a1").attr("href","http://localhost:8000/home/"+value);
+    })
+
+    $(".a2").click(function(){
+        var value1 = $(".text2").val();
+        $(".a2").attr("href","http://localhost:8000/user/"+value1);
     })
 
 </script>
